@@ -92,5 +92,5 @@ Go to `Settings` -> `API keys` and add a new API key. The description of the API
 ### Edit the environment variables for server and client
 
 Edit the `.env` file in the `server` and `client` directory.
-Set the `FUSIONAUTH_CLIENT_ID`, `FUSIONAUTH_CLIENT_SECRET`, `FUSIONAUTH_APPLICATION_ID`, and `FUSIONAUTH_API_KEY` to the values you noted down in the previous steps.
+Set the `FUSIONAUTH_CLIENT_ID`, `FUSIONAUTH_CLIENT_SECRET`, and `FUSIONAUTH_API_KEY` to the values you noted down in the previous steps.
 Set the `FUSIONAUTH_SERVER_URL` to the URL of your FusionAuth instance.
