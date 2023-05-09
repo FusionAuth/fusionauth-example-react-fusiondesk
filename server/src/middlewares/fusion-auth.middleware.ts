@@ -28,7 +28,7 @@ export class FusionAuthMiddleware implements MiddlewareMethods, OnInit {
     }
 
     async use(@Context() $ctx: Context, @Locals() locals: any) {
-        const {access_token} = $ctx.request.cookies;
+        const access_token = $ctx.request.cookies['app.at'];
 
         if (access_token) {
             try {
