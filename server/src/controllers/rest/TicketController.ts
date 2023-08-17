@@ -10,13 +10,13 @@ import {CreateTicketController} from './ticket/CreateTicketController';
  * Allows users to create tickets and agents to manage them
  */
 @Controller({
-    path: '/tickets',
-    children: [
-        FindAllTicketsController,
-        FindTicketController,
-        CreateTicketController,
-        UpdateTicketController
-    ]
+  path: '/tickets',
+  children: [
+    FindAllTicketsController,
+    FindTicketController,
+    CreateTicketController,
+    UpdateTicketController
+  ]
 })
 export class TicketController {
 }

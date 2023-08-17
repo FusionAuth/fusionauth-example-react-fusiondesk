@@ -7,16 +7,16 @@ import {TICKET_REPOSITORY} from '../../../datasources/TicketRepository';
 @Controller('/:id')
 export class FindTicketController {
 
-    @Inject(TICKET_REPOSITORY)
-    private ticketRepository: TICKET_REPOSITORY;
+  @Inject(TICKET_REPOSITORY)
+  private ticketRepository: TICKET_REPOSITORY;
 
-    /**
-     * Get a single ticket
-     * @param id
-     */
-    @Get()
-    find(@PathParams("id") @Integer() id: number): Promise<TicketEntity> {
-        return this.ticketRepository.findOneByOrFail({id});
-    }
+  /**
+   * Get a single ticket
+   * @param id
+   */
+  @Get()
+  find(@PathParams("id") @Integer() id: number): Promise<TicketEntity> {
+    return this.ticketRepository.findOneByOrFail({id});
+  }
 
 }

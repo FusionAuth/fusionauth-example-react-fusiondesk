@@ -6,5 +6,5 @@ import {IFusionAuthContext} from '@fusionauth/react-sdk/dist/providers/FusionAut
  * @param role Role to check
  */
 export const hasRole = (user: IFusionAuthContext['user'], role: string) => {
-    return user && user.roles && user.roles.includes(role);
+  return user && user.roles && user.roles.includes(role);
 }

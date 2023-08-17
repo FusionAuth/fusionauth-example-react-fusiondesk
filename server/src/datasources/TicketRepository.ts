@@ -12,6 +12,6 @@ export const TICKET_REPOSITORY = Symbol.for('TicketRepository');
 export type TICKET_REPOSITORY = typeof TicketRepository;
 
 registerProvider({
-    provide: TICKET_REPOSITORY,
-    useValue: TicketRepository
+  provide: TICKET_REPOSITORY,
+  useValue: TicketRepository
 })

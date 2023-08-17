@@ -10,11 +10,11 @@ import {FC} from 'react';
  * @constructor
  */
 export const ProtectedRoutes: FC = () => {
-    const {isLoading, isAuthenticated} = useFusionAuth();
+  const {isLoading, isAuthenticated} = useFusionAuth();
 
-    if (isLoading) return null;
+  if (isLoading) return null;
 
-    return (
-        isAuthenticated ? <Outlet/> : <Navigate to={'/'} replace={true}/>
-    );
+  return (
+    isAuthenticated ? <Outlet/> : <Navigate to={'/'} replace={true}/>
+  );
 };
